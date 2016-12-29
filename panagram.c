@@ -27,6 +27,8 @@ int main() {
     for (i=0;i<len_alfabeto;i++)
         if (alfabeto[i]==0) {
                 printf("%s\n","not pangram");
+                free(alfabeto);
+                free(s);
                 return 0;
         }
     printf("%s\n","pangram");
